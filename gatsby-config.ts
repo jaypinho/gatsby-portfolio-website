@@ -20,6 +20,13 @@ const config: GatsbyConfig = {
   trailingSlash: `always`,
   plugins: [
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `sections`,
+        path: `${__dirname}/src/sections`,
+      },
+    },
+    {
       resolve: `@lekoarts/gatsby-theme-cara`,
       // See the theme's README for all available options
       options: {},

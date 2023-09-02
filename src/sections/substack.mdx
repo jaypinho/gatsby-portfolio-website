@@ -1,0 +1,18 @@
+## Recent Substack posts
+
+{props.post_list.map(post => (
+    <p>
+        <a key={post.id} href={post.canonical_url} target="_blank">{post.title}</a>
+        <br/>
+        <small><em>{post.subtitle}</em></small>
+    </p>
+))}
+
+<iframe 
+  src="https://networked.substack.com/embed" 
+  width="480" 
+  height="320" 
+  style={{border: '1px solid #EEE', background: 'white'}}
+  frameBorder="0"
+  scrolling="no"
+></iframe>
