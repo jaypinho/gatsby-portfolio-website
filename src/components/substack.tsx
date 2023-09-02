@@ -9,7 +9,7 @@ import SubstackMdx from "../sections/substack.mdx"
 
 async function getPosts() {
   let posts = Array;
-  await fetch('https://catfact.ninja/fact')
+  await fetch('https://www.jaypinho.com/.netlify/functions/substack')
     .then((res) => res.json())
     .then((text) => { posts = text; console.log(posts); });
   return posts
