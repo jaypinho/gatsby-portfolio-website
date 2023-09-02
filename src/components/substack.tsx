@@ -9,14 +9,13 @@ import SubstackMdx from "../sections/substack.mdx"
 
 async function getPosts() {
   let posts = Array;
-  await fetch('https://www.jaypinho.com/.netlify/functions/substack')
+  await fetch('/.netlify/functions/substack')
     .then((res) => res.json())
     .then((text) => { posts = text; console.log(posts); });
   return posts
 }
 
 let posts = await getPosts();
-console.log(posts);
 
 const Hello = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>

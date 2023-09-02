@@ -6,8 +6,6 @@ export const handler: Handler = async (event, context) => {
   await fetch('https://networked.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=3')
       .then((res) => res.text())
       .then((text) => data = text);
-    
-  console.log(data);
 
   return {
       statusCode: 200,
