@@ -17,10 +17,17 @@
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-cara": "^5.0.5",
+    "@netlify/config": "^20.8.1",
     "@netlify/functions": "^2.0.2",
+    "crypto": "^1.0.1",
+    "crypto-browserify": "^3.12.0",
+    "dotenv": "^16.3.1",
     "gatsby": "^5.12.3",
     "gatsby-plugin-manifest": "^5.12.0",
     "gatsby-plugin-webpack-statoscope": "^1.0.3",
+    "os": "^0.1.2",
+    "os-browserify": "^0.3.0",
+    "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

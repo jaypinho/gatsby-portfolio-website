@@ -9,9 +9,9 @@ import SubstackMdx from "../sections/substack.mdx"
 
 async function getPosts() {
   let posts = Array;
-  await fetch('/.netlify/functions/substack')
+  await fetch(`${process.env.GATSBY_PERSONAL_WEBSITE_HOST}/.netlify/functions/substack`)
     .then((res) => res.json())
-    .then((text) => { posts = text; console.log(posts); });
+    .then((text) => { posts = text; });
   return posts
 }
 
